@@ -197,6 +197,8 @@ CONFIG_SMARTCARD=y
 # Enable this if EAP-SIM or EAP-AKA is included
 #CONFIG_PCSC=y
 
+CONFIG_IEEE80211AX=y
+
 # Support HT overrides (disable HT/HT40, mask MCS rates, etc.)
 #CONFIG_HT_OVERRIDES=y
 
@@ -284,7 +286,7 @@ CONFIG_BACKEND=file
 # Select event loop implementation
 # eloop = select() loop (default)
 # eloop_win = Windows events and WaitForMultipleObject() loop
-#CONFIG_ELOOP=eloop
+CONFIG_ELOOP=eloop
 
 # Should we use poll instead of select? Select is used by default.
 #CONFIG_ELOOP_POLL=y
@@ -533,10 +535,10 @@ CONFIG_WIFI_DISPLAY=y
 # example, operating system specific key storage to be used
 #
 # External password backend for testing purposes (developer use)
-#CONFIG_EXT_PASSWORD_TEST=y
+CONFIG_EXT_PASSWORD_TEST=y
 
 # Enable Fast Session Transfer (FST)
-#CONFIG_FST=y
+CONFIG_FST=y
 
 # Enable CLI commands for FST testing
 #CONFIG_FST_TEST=y
@@ -571,7 +573,7 @@ CONFIG_WIFI_DISPLAY=y
 #CONFIG_ACS=y
 
 # Support Multi Band Operation
-#CONFIG_MBO=y
+CONFIG_MBO=y
 
 # Fast Initial Link Setup (FILS) (IEEE 802.11ai)
 #CONFIG_FILS=y
@@ -589,7 +591,7 @@ CONFIG_IBSS_RSN=y
 #CONFIG_PMKSA_CACHE_EXTERNAL=y
 
 # Mesh Networking (IEEE 802.11s)
-#CONFIG_MESH=y
+CONFIG_MESH=y
 
 # Background scanning modules
 # These can be used to request wpa_supplicant to perform background scanning
@@ -603,7 +605,7 @@ CONFIG_BGSCAN_SIMPLE=y
 
 # Opportunistic Wireless Encryption (OWE)
 # Experimental implementation of draft-harkins-owe-07.txt
-#CONFIG_OWE=y
+CONFIG_OWE=y
 
 # Device Provisioning Protocol (DPP)
 CONFIG_DPP=y
